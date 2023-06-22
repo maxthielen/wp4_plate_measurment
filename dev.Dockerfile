@@ -16,9 +16,20 @@ RUN apt-get update
 
 RUN apt-get install -y python3-pip python3-tk
 
-# Copy & install the pip requirements
-COPY requirements.txt ./
-RUN pip install --upgrade --force-reinstall -r requirements.txt
+# Install pip requirements
+RUN pip install --upgrade --force-reinstall --default-timeout=100 future \
+    transforms3d==0.4.1 \
+    numpy-quaternion==2022.4.3 \
+    numpy \
+    matplotlib \
+    scikit-image \
+    scikit-learn \ 
+    open3d \
+    opencv-python \
+    scipy \ 
+    imutils \
+    python-dotenv \
+    Pillow 
 
 # Install Open3D system dependencies and opencv
 RUN apt-get update && apt-get install --no-install-recommends -y \

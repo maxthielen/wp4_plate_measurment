@@ -1,117 +1,79 @@
 import threading
 import rclpy
-from ur_msgs.srv import SetIO
+
 from ur_msgs.msg import IOStates
+from ur_msgs.srv import SetIO
+from ur_msgs.std_srvs import Trigger
 
 
-from rclpy.node import Node
-from std_msgs.msg import Bool
-
-
-class UR5MoveNode(Node):
-    _instance = None
-
-    def __new__(cls):
-        # Singleton class to prevent duplicate node in flipper and scanner classes
-        if not cls._instance:
-            cls._instance = super().__new__(cls)
-        return cls.instance
-
-    def __init__(self):
-        if self._instance is not None:
-            return
-
-        super().__init__('ur5_move_node')
-
-        # Create publishers and subscribers (queue size:10)
-        self.move_it_pub = self.create_publisher(Bool, 'ur_driver/move_it', 10)
-        
-    def __del__(self):
-        self.destroy_publisher(self.move_it_pub)
-
-    def sweep_scan(self):
-        msg = Bool()
-        msg.data = True
-        # trigger scan
-        self.move_it_pub.publish(msg)
-        # wait for scan to finish
-        rclpy.wait_for_message('ur_driver/sweep_scan', 'done')
-
-
-class UR5IONode():
-    # _instance = None
-
-    # def __new__(cls):
-    #     # Singleton class to prevent duplicate node in flipper and scanner classes
-    #     if not cls._instance:
-    #         cls._instance = super().__new__(cls)
-    #     return cls.instance
-
-    def __init__(self, callback=None):
-        # if self._instance is not None:
-        #     # todo:: enable user to subscribe to input callback without initializing
-        #     if callback is not None:
-        #         self.callbacks.append(callback)
-        #     return
-        
+class UR5Node():
+    def __init__(self): 
+        # init node
         rclpy.init()
-        self.node = rclpy.create_node('flip_io_node')
+        self.node = rclpy.create_node('flip_master_node')
 
-        # self.set_io = self.node.create_client(SetIO, '/io_and_status_controller/set_io')
-        # print('created set_io')
-        # self.set_io.wait_for_service()
-        # print('service answered')
+        # get input sub
+        self.get_io_sub = self.node.create_subscription(IOStates, 'io_and_status_controller/io_states', self.io_callback, 10)
 
-        self.get_io = self.node.create_subscription(IOStates, 'io_and_status_controller/io_states', self.io_callback, 10)
+        # set output client
+        self.set_io_cli = self.node.create_client(SetIO, '/io_and_status_controller/set_io')
+        print('waiting for set_io client ...')
+        if self.set_io_cli.wait_for_service(timeout_sec=10) == False: 
+            raise Exception("Set IO client timeout")
+           
 
-        # self.callbacks = [callback]
+        # trigger move client (starting pos)
+        self.trigger_move_cli = self.node.create_client(Trigger, '/trigger_movement/move')
+        print('waiting for trigger_move client')
+        if self.trigger_move_cli.wait_for_service(timeout_sec=10) == False:
+            raise Exception("Trigger Move client timeout")
 
+        # trigger scan client (scan path)
+        self.trigger_scan_cli = self.node.create_client(Trigger, '/trigger_movement/scan')
+        print('waiting for trigger_scan client')
+        if self.trigger_scan_cli.wait_for_service(timeout_sec=10) == False:
+            raise Exception("Trigger Scan client timeout")
+
+        # spin node in seperate thread
         self.executor = rclpy.executors.MultiThreadedExecutor()
         self.executor.add_node(self.node)
         self.executor_thread = threading.Thread(target=self.executor.spin, daemon=True)
         self.executor_thread.start()
 
-       
+        print("UR5 Node ready")
 
     def __del__(self):
         self.node.destroy_node()
         rclpy.shutdown()
 
-    # def set_digital_output(self, pin, state):
-    #     self.set_io.wait_for_service()
-    #     set_io_req = SetIO()
+    def set_digital_output(self, pin, state):
+        if self.set_io_cli.wait_for_service(timeout_sec=10) == False:
+            raise Exception("Set IO client timeout")
+        set_io_req = SetIO()
 
-    #     set_io_req.fun = 1 #digital?
-    #     set_io_req.pin = pin
-    #     set_io_req.state = state
+        set_io_req.fun = 1 #digital?
+        set_io_req.pin = pin
+        set_io_req.state = state
 
-    #     print(f"Setting pin {pin}: {state}")
-    #     set_io_res = self.set_io(set_io_req)
+        print(f"Setting pin {pin}: {state}")
+        set_io_res = self.set_io_cli(set_io_req)
 
-    #     print(set_io_res)
-    #     if (not set_io_res.success):
-    #         raise Exception(f"Failed to set pin {pin} to {state}")
+        print(set_io_res)
+        if (not set_io_res.success):
+            raise Exception(f"Failed to set pin {pin} to {state}")
+        
+    def trigger_start_position(self):
+        if self.trigger_move_cli.wait_for_service(timeout_sec=10) == False:
+            raise Exception("Trigger Move client timeout")
+        return self.trigger_move_cli(Trigger())
+    
+    def trigger_scan(self):
+        if self.trigger_scan_cli.wait_for_service(timeout_sec=10) == False:
+            raise Exception("Trigger Scan client timeout")
+        return self.trigger_scan_cli(Trigger())
     
     def io_callback(self, msg):
-        print(msg)
+        print(f"[io_callback] msg: {msg}")
         pin = msg.digital_in_states[0].pin
-        # if not self.prev_digital_in_state:
-        #     if msg.digital_in_states[0].state:
-        #         if not self.pauze_state:
-        #             self.node.get_logger().info('Demonstrator set to pauze mode..')
-        #             self.pauze_state = True
-        #             self.start_stop_ext_control(False)
-        #         else:
-        #             self.node.get_logger().info('Demonstrator is going to resume..')
-        #             self.pauze_state = False
-        #             self.start_stop_ext_control(True)
-        # self.prev_digital_in_state = msg.digital_in_states[0].state
-        #self.node.get_logger().info('digital pin %i state: %i' % (pin, self.pauze_state))
-
-
-    # def digital_input_callback(self, msg):
-    #     value = msg.data
-    #     self.get_logger().info('Digital input value: {}'.format(value))
-
-    #     for callback in self.callbacks:
-    #         callback()
+        print(f"[io_callback] msg.digital_in_state[0].pin: {pin}")
+        

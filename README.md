@@ -1,6 +1,11 @@
 # WP4 Plate Measurment
 
-## Bring Up
+## Build Image
+
+1. Make sure systems has **wifi connection** (able to dowload packages online)
+2. Run >**./dev_build_image.sh**
+
+## Bring Up Container
 
 1. Start UR5 by pressing green button
 2. Run >**./dev_container_bringup.sh**
