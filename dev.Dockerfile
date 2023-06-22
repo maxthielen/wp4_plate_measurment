@@ -15,10 +15,17 @@ WORKDIR /home/ros_ws/src
 RUN apt-get update
 
 RUN apt-get install -y python3-pip python3-tk
-# Install transforms3d
-RUN pip install --upgrade --force-reinstall \
-    transforms3d==0.4.1 \
-    numpy-quaternion==2022.4.3
+
+# Copy & install the pip requirements
+COPY requirements.txt ./
+RUN pip install --upgrade --force-reinstall -r requirements.txt
+
+# Install Open3D system dependencies and opencv
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    libgl1 \
+    libgomp1 \
+    python3-opencv \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install UR robot driver and its dependencies
 RUN apt-get install -y ros-${ROS_DISTRO}-ur-robot-driver

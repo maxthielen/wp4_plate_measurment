@@ -14,11 +14,19 @@ WORKDIR /home/ros_ws/src
 # Update package repos
 RUN apt-get update
 
+# Install python essentials
 RUN apt-get install -y python3-pip python3-tk
-# Install transforms3d
-RUN pip install --upgrade --force-reinstall \
-    transforms3d==0.4.1 \
-    numpy-quaternion==2022.4.3
+
+# Copy & install the pip requirements
+COPY requirements.txt .
+RUN pip install --upgrade --force-reinstall -r requirements.txt
+
+# Install Open3D system dependencies and opencv
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    libgl1 \
+    libgomp1 \
+    python3-opencv \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install sensor_msgs_py from common_interfaces
 RUN apt-get install -y ros-rolling-sensor-msgs-py
