@@ -1,0 +1,31 @@
+[0.019s] Invoking command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[0.056s] [35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[0.111s] [ 50%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[9.336s] [100%] [32m[1mLinking CXX executable ur5_scan_path_service[0m
+[9.802s] [100%] Built target ur5_scan_path_service
+[9.823s] Invoked command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[9.913s] Invoking command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+[9.925s] -- Install configuration: ""
+[9.926s] -- Execute custom install script
+[9.927s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/ur5_scan_path_service
+[9.928s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/moveit_servo.yaml
+[9.928s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.srdf
+[9.928s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.urdf
+[9.929s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/sim_scan_service.launch.py
+[9.929s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/test_scan_service.launch.py
+[9.930s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/package_run_dependencies/ur5_scan_path_service
+[9.931s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/parent_prefix_path/ur5_scan_path_service
+[9.931s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/ament_prefix_path.sh
+[9.932s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/ament_prefix_path.dsv
+[9.932s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/path.sh
+[9.933s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/path.dsv
+[9.934s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.bash
+[9.934s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.sh
+[9.935s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.zsh
+[9.935s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.dsv
+[9.936s] -- Symlinking: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.dsv
+[9.944s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/packages/ur5_scan_path_service
+[9.944s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig.cmake
+[9.944s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig-version.cmake
+[9.944s] -- Up-to-date symlink: /home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.xml
+[9.947s] Invoked command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service

@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[ 50%] Built target servo_keyboard_input
+[ 75%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:217:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+  217 |   rclcpp[01;31m[K.[m[Kspin(motionPlanner);
+      |         [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

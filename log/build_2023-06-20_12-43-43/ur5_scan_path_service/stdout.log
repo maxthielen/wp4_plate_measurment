@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[ 50%] Built target servo_keyboard_input
+[ 75%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m

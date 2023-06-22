@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.000859] (ur5_scan_path_service) JobQueued: {'identifier': 'ur5_scan_path_service', 'dependencies': OrderedDict()}
+[0.001076] (ur5_scan_path_service) JobStarted: {'identifier': 'ur5_scan_path_service'}
+[0.017417] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'cmake'}
+[0.018152] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'build'}
+[0.018732] (ur5_scan_path_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', '--', '-j12', '-l12'], 'cwd': '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'env': OrderedDict([('HOSTNAME', 'visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C'), ('GIT_ASKPASS', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-810c0522-605d-4871-91b6-2a0b924b59aa.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c2753c77-d92b-436d-9623-a6510ebd647c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-c2753c77-d92b-436d-9623-a6510ebd647c.sock","/tmp/.X11-unix/X18","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dc7ebdc20f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-c2753c77-d92b-436d-9623-a6510ebd647c.sock'), ('ROS_DOMAIN_ID', '6'), ('AMENT_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X18'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy')]), 'shell': False}
+[0.060091] (ur5_scan_path_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ur5_scan_path_service\x1b[0m\n'}
+[0.076010] (ur5_scan_path_service) StdoutLine: {'line': b'[ 50%] Built target servo_keyboard_input\n'}
+[0.099741] (-) TimerEvent: {}
+[0.117807] (ur5_scan_path_service) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o\x1b[0m\n'}
+[0.199841] (-) TimerEvent: {}
+[0.300127] (-) TimerEvent: {}
+[0.400457] (-) TimerEvent: {}
+[0.500750] (-) TimerEvent: {}
+[0.601050] (-) TimerEvent: {}
+[0.701344] (-) TimerEvent: {}
+[0.801652] (-) TimerEvent: {}
+[0.902006] (-) TimerEvent: {}
+[1.002367] (-) TimerEvent: {}
+[1.102680] (-) TimerEvent: {}
+[1.203071] (-) TimerEvent: {}
+[1.303399] (-) TimerEvent: {}
+[1.403724] (-) TimerEvent: {}
+[1.504067] (-) TimerEvent: {}
+[1.604394] (-) TimerEvent: {}
+[1.704725] (-) TimerEvent: {}
+[1.805048] (-) TimerEvent: {}
+[1.905443] (-) TimerEvent: {}
+[2.005775] (-) TimerEvent: {}
+[2.106102] (-) TimerEvent: {}
+[2.206430] (-) TimerEvent: {}
+[2.306758] (-) TimerEvent: {}
+[2.407123] (-) TimerEvent: {}
+[2.507498] (-) TimerEvent: {}
+[2.607900] (-) TimerEvent: {}
+[2.708267] (-) TimerEvent: {}
+[2.808656] (-) TimerEvent: {}
+[2.909019] (-) TimerEvent: {}
+[3.009380] (-) TimerEvent: {}
+[3.109690] (-) TimerEvent: {}
+[3.210076] (-) TimerEvent: {}
+[3.310512] (-) TimerEvent: {}
+[3.410894] (-) TimerEvent: {}
+[3.511283] (-) TimerEvent: {}
+[3.611639] (-) TimerEvent: {}
+[3.711989] (-) TimerEvent: {}
+[3.812276] (-) TimerEvent: {}
+[3.912639] (-) TimerEvent: {}
+[4.013074] (-) TimerEvent: {}
+[4.113405] (-) TimerEvent: {}
+[4.213789] (-) TimerEvent: {}
+[4.314160] (-) TimerEvent: {}
+[4.414520] (-) TimerEvent: {}
+[4.514882] (-) TimerEvent: {}
+[4.615228] (-) TimerEvent: {}
+[4.715594] (-) TimerEvent: {}
+[4.737380] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool MotionPlanner::execute_scanning_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.751653] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksuccess\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kboost::system::errc::success\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.751820] (ur5_scan_path_service) StderrLine: {'line': b'  122 |   \x1b[01;31m\x1b[Ksuccess\x1b[m\x1b[K = true;\n'}
+[4.751899] (ur5_scan_path_service) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.751973] (ur5_scan_path_service) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kboost::system::errc::success\x1b[m\x1b[K\n'}
+[4.752047] (ur5_scan_path_service) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/system/system_error.hpp:11\x1b[m\x1b[K,\n'}
+[4.752120] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/thread/exceptions.hpp:22\x1b[m\x1b[K,\n'}
+[4.752192] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/thread/lock_types.hpp:12\x1b[m\x1b[K,\n'}
+[4.752264] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/thread/lock_algorithms.hpp:11\x1b[m\x1b[K,\n'}
+[4.752341] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/thread/locks.hpp:10\x1b[m\x1b[K,\n'}
+[4.752415] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit/occupancy_map_monitor/occupancy_map.h:40\x1b[m\x1b[K,\n'}
+[4.752487] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit/occupancy_map_monitor/occupancy_map_monitor.h:47\x1b[m\x1b[K,\n'}
+[4.752559] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit/planning_scene_monitor/planning_scene_monitor.h:45\x1b[m\x1b[K,\n'}
+[4.752631] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit_servo/collision_check.h:46\x1b[m\x1b[K,\n'}
+[4.752702] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit_servo/servo.h:45\x1b[m\x1b[K,\n'}
+[4.752773] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:5\x1b[m\x1b[K:\n'}
+[4.752845] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/system/error_code.hpp:62:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kboost::system::errc::success\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.752918] (ur5_scan_path_service) StderrLine: {'line': b'   62 |     \x1b[01;36m\x1b[Ksuccess\x1b[m\x1b[K = 0,\n'}
+[4.752989] (ur5_scan_path_service) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.815715] (-) TimerEvent: {}
+[4.915999] (-) TimerEvent: {}
+[5.016364] (-) TimerEvent: {}
+[5.116750] (-) TimerEvent: {}
+[5.217073] (-) TimerEvent: {}
+[5.317404] (-) TimerEvent: {}
+[5.417734] (-) TimerEvent: {}
+[5.518052] (-) TimerEvent: {}
+[5.618403] (-) TimerEvent: {}
+[5.718709] (-) TimerEvent: {}
+[5.819111] (-) TimerEvent: {}
+[5.919468] (-) TimerEvent: {}
+[6.019793] (-) TimerEvent: {}
+[6.120114] (-) TimerEvent: {}
+[6.220444] (-) TimerEvent: {}
+[6.320772] (-) TimerEvent: {}
+[6.421106] (-) TimerEvent: {}
+[6.521439] (-) TimerEvent: {}
+[6.621749] (-) TimerEvent: {}
+[6.722071] (-) TimerEvent: {}
+[6.822394] (-) TimerEvent: {}
+[6.922686] (-) TimerEvent: {}
+[7.023064] (-) TimerEvent: {}
+[7.123353] (-) TimerEvent: {}
+[7.223689] (-) TimerEvent: {}
+[7.323976] (-) TimerEvent: {}
+[7.424247] (-) TimerEvent: {}
+[7.524575] (-) TimerEvent: {}
+[7.624888] (-) TimerEvent: {}
+[7.725218] (-) TimerEvent: {}
+[7.813051] (ur5_scan_path_service) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1\n'}
+[7.813448] (ur5_scan_path_service) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2\n'}
+[7.813653] (ur5_scan_path_service) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.815277] (ur5_scan_path_service) CommandEnded: {'returncode': 2}
+[7.825347] (-) TimerEvent: {}
+[7.848937] (ur5_scan_path_service) JobEnded: {'identifier': 'ur5_scan_path_service', 'rc': 2}
+[7.859535] (-) EventReactorShutdown: {}

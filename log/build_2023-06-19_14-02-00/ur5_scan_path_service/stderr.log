@@ -1,0 +1,7 @@
+CMake Error at CMakeLists.txt:39 (target_compile_features):
+  Cannot specify compile features for target
+  "ur5_scanservo_keyboard_input_path_service" which is not built by this
+  project.
+
+
+make: *** [Makefile:310: cmake_check_build_system] Error 1

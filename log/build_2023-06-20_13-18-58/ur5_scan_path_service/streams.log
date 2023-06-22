@@ -1,0 +1,27 @@
+[0.018s] Invoking command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[0.060s] [35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[0.072s] [ 50%] Built target servo_keyboard_input
+[0.141s] [ 75%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[4.727s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::execute_scanning_path()[m[K’:
+[4.727s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksuccess[m[K’ was not declared in this scope; did you mean ‘[01m[Kboost::system::errc::success[m[K’?
+[4.727s]   122 |   [01;31m[Ksuccess[m[K = true;
+[4.727s]       |   [01;31m[K^~~~~~~[m[K
+[4.728s]       |   [32m[Kboost::system::errc::success[m[K
+[4.728s] In file included from [01m[K/usr/include/boost/system/system_error.hpp:11[m[K,
+[4.728s]                  from [01m[K/usr/include/boost/thread/exceptions.hpp:22[m[K,
+[4.728s]                  from [01m[K/usr/include/boost/thread/lock_types.hpp:12[m[K,
+[4.728s]                  from [01m[K/usr/include/boost/thread/lock_algorithms.hpp:11[m[K,
+[4.728s]                  from [01m[K/usr/include/boost/thread/locks.hpp:10[m[K,
+[4.728s]                  from [01m[K/opt/ros/foxy/include/moveit/occupancy_map_monitor/occupancy_map.h:40[m[K,
+[4.728s]                  from [01m[K/opt/ros/foxy/include/moveit/occupancy_map_monitor/occupancy_map_monitor.h:47[m[K,
+[4.728s]                  from [01m[K/opt/ros/foxy/include/moveit/planning_scene_monitor/planning_scene_monitor.h:45[m[K,
+[4.728s]                  from [01m[K/opt/ros/foxy/include/moveit_servo/collision_check.h:46[m[K,
+[4.728s]                  from [01m[K/opt/ros/foxy/include/moveit_servo/servo.h:45[m[K,
+[4.728s]                  from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:5[m[K:
+[4.728s] [01m[K/usr/include/boost/system/error_code.hpp:62:5:[m[K [01;36m[Knote: [m[K‘[01m[Kboost::system::errc::success[m[K’ declared here
+[4.728s]    62 |     [01;36m[Ksuccess[m[K = 0,
+[4.728s]       |     [01;36m[K^~~~~~~[m[K
+[7.925s] make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1
+[7.925s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2
+[7.925s] make: *** [Makefile:141: all] Error 2
+[7.927s] Invoked command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12

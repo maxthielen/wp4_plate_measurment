@@ -1,0 +1,17 @@
+CMake Error at CMakeLists.txt:17 (find_package):
+  By not providing "Findmoveit_servo.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "moveit_servo", but CMake did not find one.
+
+  Could not find a package configuration file provided by "moveit_servo" with
+  any of the following names:
+
+    moveit_servoConfig.cmake
+    moveit_servo-config.cmake
+
+  Add the installation prefix of "moveit_servo" to CMAKE_PREFIX_PATH or set
+  "moveit_servo_DIR" to a directory containing one of the above files.  If
+  "moveit_servo" provides a separate development package or SDK, be sure it
+  has been installed.
+
+

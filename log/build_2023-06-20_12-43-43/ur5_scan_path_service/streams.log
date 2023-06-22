@@ -1,0 +1,43 @@
+[0.020s] Invoking command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[0.059s] [35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[0.071s] [ 50%] Built target servo_keyboard_input
+[0.118s] [ 75%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[4.729s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::execute_scanning_path()[m[K’:
+[4.730s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:130:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<moveit::core::RobotState>[m[K’ has no member named ‘[01m[KsetJointPositions[m[K’
+[4.730s]   130 |           robot_state.[01;31m[KsetJointPositions[m[K({{"elbow_joint", -1.5707},
+[4.730s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.730s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:137:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface[m[K’ was not declared in this scope; did you mean ‘[01m[Kmove_group_interface_[m[K’?
+[4.730s]   137 |           auto end_effector_state = robot_state->getFrameTransform([01;31m[Kmove_group_interface[m[K->getEndEffectorLink());
+[4.730s]       |                                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.730s]       |                                                                    [32m[Kmove_group_interface_[m[K
+[4.731s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:138:26:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’
+[4.731s]   138 |           geometry_msgs::[01;31m[KPose[m[K planned_eef_pose;
+[4.731s]       |                          [01;31m[K^~~~[m[K
+[4.731s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:138:26:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[4.731s] In file included from [01m[K/opt/ros/foxy/include/urdf_model/joint.h:43[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/urdf_model/link.h:44[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/urdf_model/model.h:42[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/urdf/model.h:43[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/srdfdom/model.h:44[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/moveit/robot_model/robot_model.h:42[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/moveit/robot_state/robot_state.h:40[m[K,
+[4.731s]                  from [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:41[m[K,
+[4.731s]                  from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:5[m[K:
+[4.731s] [01m[K/opt/ros/foxy/include/urdf_model/pose.h:243:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kurdf::Pose[m[K’
+[4.731s]   243 | class [01;36m[KPose[m[K
+[4.732s]       |       [01;36m[K^~~~[m[K
+[4.732s] In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/pose.hpp:7[m[K,
+[4.732s]                  from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4[m[K:
+[4.732s] [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:134:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg::Pose[m[K’
+[4.732s]   134 | using [01;36m[KPose[m[K =
+[4.732s]       |       [01;36m[K^~~~[m[K
+[4.732s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:139:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+[4.732s]   139 |           [01;31m[Ktf[m[K::poseEigenToMsg(end_effector_state, planned_eef_pose);//pose conversion from Eigen to pose msgs
+[4.732s]       |           [01;31m[K^~[m[K
+[4.732s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:139:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanned_eef_pose[m[K’ was not declared in this scope
+[4.732s]   139 |           tf::poseEigenToMsg(end_effector_state, [01;31m[Kplanned_eef_pose[m[K);//pose conversion from Eigen to pose msgs
+[4.732s]       |                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.975s] make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1
+[7.975s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2
+[7.976s] make: *** [Makefile:141: all] Error 2
+[7.978s] Invoked command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12

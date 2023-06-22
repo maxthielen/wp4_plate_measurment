@@ -1,0 +1,8 @@
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/servo_keyboard_input.cpp:41:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+   41 | #include [01;31m[K<rclcpp/rclcpp.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/servo_keyboard_input.dir/build.make:63: CMakeFiles/servo_keyboard_input.dir/src/servo_keyboard_input.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/servo_keyboard_input.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

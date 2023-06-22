@@ -1,0 +1,4 @@
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::execute_scanning_path()[m[K’:
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:121:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksuccess[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  121 |           bool [01;35m[Ksuccess[m[K = (move_group_interface_.execute(trajectory) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+      |                [01;35m[K^~~~~~~[m[K

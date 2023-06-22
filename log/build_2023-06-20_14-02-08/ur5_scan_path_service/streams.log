@@ -1,0 +1,28 @@
+[0.017s] Invoking command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[0.057s] [35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[0.073s] [ 50%] Built target servo_keyboard_input
+[0.117s] [ 75%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[4.635s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::move_to_scan_start()[m[K’:
+[4.635s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:81:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’ has no member named ‘[01m[KsetTargetPose[m[K’
+[4.635s]    81 |           move_group_interface_.[01;31m[KsetTargetPose[m[K(start_pose_); //TODO
+[4.635s]       |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[4.635s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::execute_scanning_path()[m[K’:
+[4.635s] [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:120:114:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::computeCartesianPath(<brace-enclosed initializer list>, const double&, const double&, moveit_msgs::msg::RobotTrajectory&)[m[K’
+[4.636s]   120 | rface_.computeCartesianPath({current}, eef_step, jump_threshold, trajectory[01;31m[K)[m[K;
+[4.636s]       |                                                                            [01;31m[K^[m[K
+[4.636s] 
+[4.636s] In file included from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4[m[K:
+[4.636s] [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, bool, moveit_msgs::msg::MoveItErrorCodes*)[m[K’
+[4.636s]   764 |   double [01;36m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,
+[4.636s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.636s] [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:76:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&[m[K’
+[4.636s]   764 |   double computeCartesianPath([01;36m[Kconst std::vector<geometry_msgs::msg::Pose>& waypoints[m[K, double eef_step,
+[4.636s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[4.636s] [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, const Constraints&, bool, moveit_msgs::msg::MoveItErrorCodes*)[m[K’
+[4.636s]   780 |   double [01;36m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,
+[4.636s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.636s] [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 4 provided
+[7.711s] make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1
+[7.712s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2
+[7.712s] make: *** [Makefile:141: all] Error 2
+[7.713s] Invoked command in '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12

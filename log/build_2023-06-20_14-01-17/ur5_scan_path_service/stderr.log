@@ -1,0 +1,79 @@
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::move_to_scan_start()[m[K’:
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:81:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’ has no member named ‘[01m[KsetTargetPose[m[K’
+   81 |           move_group_interface_.[01;31m[KsetTargetPose[m[K(start_pose_); //TODO
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:[m[K In member function ‘[01m[Kbool MotionPlanner::execute_scanning_path()[m[K’:
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:106:21:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ and ‘[01m[Kgeometry_msgs::msg::Pose[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’})
+  106 |           current = [01;31m[Kstart_pose_[m[K;
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/moveit_msgs/msg/detail/visibility_constraint__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/moveit_msgs/msg/detail/constraints__struct.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/moveit_msgs/msg/constraints.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:45[m[K,
+                 from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >& geometry_msgs::msg::PoseStamped_<std::allocator<void> >::operator=(const geometry_msgs::msg::PoseStamped_<std::allocator<void> >&)[m[K’
+   37 | struct [01;36m[KPoseStamped_[m[K
+      |        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::PoseStamped_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >& geometry_msgs::msg::PoseStamped_<std::allocator<void> >::operator=(geometry_msgs::msg::PoseStamped_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >&&[m[K’
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:108:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposition[m[K’
+  108 |           current.[01;31m[Kposition[m[K.x += scan_path_length_;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:120:114:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::computeCartesianPath(<brace-enclosed initializer list>, const double&, const double&, moveit_msgs::msg::RobotTrajectory&)[m[K’
+  120 | rface_.computeCartesianPath({current}, eef_step, jump_threshold, trajectory[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+
+In file included from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4[m[K:
+[01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, bool, moveit_msgs::msg::MoveItErrorCodes*)[m[K’
+  764 |   double [01;36m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:76:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&[m[K’
+  764 |   double computeCartesianPath([01;36m[Kconst std::vector<geometry_msgs::msg::Pose>& waypoints[m[K, double eef_step,
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, const Constraints&, bool, moveit_msgs::msg::MoveItErrorCodes*)[m[K’
+  780 |   double [01;36m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 4 provided
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:1[m[K:
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposition[m[K’
+  122 | CLCPP_INFO(rclcpp::get_logger("rclcpp"), "orientation=: %f %f %f", current.[01;31m[Kposition[m[K.x, current.position.y, current.position.z);
+      |                                                                            [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:107:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposition[m[K’
+  122 | et_logger("rclcpp"), "orientation=: %f %f %f", current.position.x, current.[01;31m[Kposition[m[K.y, current.position.z);
+      |                                                                            [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:127:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kposition[m[K’
+  122 | cpp"), "orientation=: %f %f %f", current.position.x, current.position.y, current.[01;31m[Kposition[m[K.z);
+      |                                                                                  [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+  123 | PP_INFO(rclcpp::get_logger("rclcpp"), "orientation=: %f %f %f %f", current.[01;31m[Korientation[m[K.w, current.orientation.x, current.orientation.y, current.orientation.z);
+      |                                                                            [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:113:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+  123 | ger("rclcpp"), "orientation=: %f %f %f %f", current.orientation.w, current.[01;31m[Korientation[m[K.x, current.orientation.y, current.orientation.z);
+      |                                                                            [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:136:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+  123 | tion=: %f %f %f %f", current.orientation.w, current.orientation.x, current.[01;31m[Korientation[m[K.y, current.orientation.z);
+      |                                                                            [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:159:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ has no member named ‘[01m[Korientation[m[K’
+  123 |  current.orientation.w, current.orientation.x, current.orientation.y, current.[01;31m[Korientation[m[K.z);
+      |                                                                               [01;31m[K^~~~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

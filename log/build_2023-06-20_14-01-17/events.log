@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.000446] (ur5_scan_path_service) JobQueued: {'identifier': 'ur5_scan_path_service', 'dependencies': OrderedDict()}
+[0.000578] (ur5_scan_path_service) JobStarted: {'identifier': 'ur5_scan_path_service'}
+[0.014904] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'cmake'}
+[0.015924] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'build'}
+[0.016638] (ur5_scan_path_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', '--', '-j12', '-l12'], 'cwd': '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'env': OrderedDict([('HOSTNAME', 'visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C'), ('GIT_ASKPASS', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-810c0522-605d-4871-91b6-2a0b924b59aa.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-c2753c77-d92b-436d-9623-a6510ebd647c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-c2753c77-d92b-436d-9623-a6510ebd647c.sock","/tmp/.X11-unix/X18","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-dc7ebdc20f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-c2753c77-d92b-436d-9623-a6510ebd647c.sock'), ('ROS_DOMAIN_ID', '6'), ('AMENT_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X18'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy')]), 'shell': False}
+[0.058926] (ur5_scan_path_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ur5_scan_path_service\x1b[0m\n'}
+[0.070781] (ur5_scan_path_service) StdoutLine: {'line': b'[ 50%] Built target servo_keyboard_input\n'}
+[0.098981] (-) TimerEvent: {}
+[0.119063] (ur5_scan_path_service) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o\x1b[0m\n'}
+[0.199068] (-) TimerEvent: {}
+[0.299328] (-) TimerEvent: {}
+[0.399689] (-) TimerEvent: {}
+[0.500071] (-) TimerEvent: {}
+[0.600409] (-) TimerEvent: {}
+[0.700775] (-) TimerEvent: {}
+[0.801116] (-) TimerEvent: {}
+[0.901395] (-) TimerEvent: {}
+[1.001706] (-) TimerEvent: {}
+[1.102024] (-) TimerEvent: {}
+[1.202335] (-) TimerEvent: {}
+[1.302649] (-) TimerEvent: {}
+[1.402969] (-) TimerEvent: {}
+[1.503313] (-) TimerEvent: {}
+[1.603563] (-) TimerEvent: {}
+[1.703886] (-) TimerEvent: {}
+[1.804152] (-) TimerEvent: {}
+[1.904414] (-) TimerEvent: {}
+[2.004725] (-) TimerEvent: {}
+[2.105037] (-) TimerEvent: {}
+[2.205372] (-) TimerEvent: {}
+[2.305684] (-) TimerEvent: {}
+[2.405993] (-) TimerEvent: {}
+[2.506301] (-) TimerEvent: {}
+[2.606606] (-) TimerEvent: {}
+[2.706914] (-) TimerEvent: {}
+[2.807230] (-) TimerEvent: {}
+[2.907541] (-) TimerEvent: {}
+[3.007802] (-) TimerEvent: {}
+[3.108180] (-) TimerEvent: {}
+[3.208443] (-) TimerEvent: {}
+[3.308712] (-) TimerEvent: {}
+[3.409019] (-) TimerEvent: {}
+[3.509339] (-) TimerEvent: {}
+[3.609602] (-) TimerEvent: {}
+[3.709834] (-) TimerEvent: {}
+[3.810096] (-) TimerEvent: {}
+[3.910419] (-) TimerEvent: {}
+[4.010696] (-) TimerEvent: {}
+[4.111035] (-) TimerEvent: {}
+[4.211360] (-) TimerEvent: {}
+[4.311692] (-) TimerEvent: {}
+[4.412032] (-) TimerEvent: {}
+[4.512325] (-) TimerEvent: {}
+[4.612665] (-) TimerEvent: {}
+[4.713001] (-) TimerEvent: {}
+[4.727787] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool MotionPlanner::move_to_scan_start()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.742033] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:81:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass moveit::planning_interface::MoveGroupInterface\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KsetTargetPose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.742139] (ur5_scan_path_service) StderrLine: {'line': b'   81 |           move_group_interface_.\x1b[01;31m\x1b[KsetTargetPose\x1b[m\x1b[K(start_pose_); //TODO\n'}
+[4.742210] (ur5_scan_path_service) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.742277] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool MotionPlanner::execute_scanning_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.742343] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:106:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[4.742418] (ur5_scan_path_service) StderrLine: {'line': b'  106 |           current = \x1b[01;31m\x1b[Kstart_pose_\x1b[m\x1b[K;\n'}
+[4.742527] (ur5_scan_path_service) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.742602] (ur5_scan_path_service) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit_msgs/msg/detail/visibility_constraint__struct.hpp:20\x1b[m\x1b[K,\n'}
+[4.742692] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit_msgs/msg/detail/constraints__struct.hpp:25\x1b[m\x1b[K,\n'}
+[4.742765] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit_msgs/msg/constraints.hpp:7\x1b[m\x1b[K,\n'}
+[4.742932] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:45\x1b[m\x1b[K,\n'}
+[4.743048] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4\x1b[m\x1b[K:\n'}
+[4.743146] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >& geometry_msgs::msg::PoseStamped_<std::allocator<void> >::operator=(const geometry_msgs::msg::PoseStamped_<std::allocator<void> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743230] (ur5_scan_path_service) StderrLine: {'line': b'   37 | struct \x1b[01;36m\x1b[KPoseStamped_\x1b[m\x1b[K\n'}
+[4.743293] (ur5_scan_path_service) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.743356] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst geometry_msgs::msg::PoseStamped_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743421] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >& geometry_msgs::msg::PoseStamped_<std::allocator<void> >::operator=(geometry_msgs::msg::PoseStamped_<std::allocator<void> >&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743485] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:37:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743557] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:108:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743625] (ur5_scan_path_service) StderrLine: {'line': b'  108 |           current.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K.x += scan_path_length_;\n'}
+[4.743688] (ur5_scan_path_service) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.743750] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:120:114:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmoveit::planning_interface::MoveGroupInterface::computeCartesianPath(<brace-enclosed initializer list>, const double&, const double&, moveit_msgs::msg::RobotTrajectory&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743823] (ur5_scan_path_service) StderrLine: {'line': b'  120 | rface_.computeCartesianPath({current}, eef_step, jump_threshold, trajectory\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.743886] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.743949] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.744011] (ur5_scan_path_service) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:4\x1b[m\x1b[K:\n'}
+[4.744074] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, bool, moveit_msgs::msg::MoveItErrorCodes*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.744141] (ur5_scan_path_service) StderrLine: {'line': b'  764 |   double \x1b[01;36m\x1b[KcomputeCartesianPath\x1b[m\x1b[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,\n'}
+[4.744204] (ur5_scan_path_service) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.744267] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:764:76:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.744332] (ur5_scan_path_service) StderrLine: {'line': b'  764 |   double computeCartesianPath(\x1b[01;36m\x1b[Kconst std::vector<geometry_msgs::msg::Pose>& waypoints\x1b[m\x1b[K, double eef_step,\n'}
+[4.744395] (ur5_scan_path_service) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.744458] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kdouble moveit::planning_interface::MoveGroupInterface::computeCartesianPath(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, const Constraints&, bool, moveit_msgs::msg::MoveItErrorCodes*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.744522] (ur5_scan_path_service) StderrLine: {'line': b'  780 |   double \x1b[01;36m\x1b[KcomputeCartesianPath\x1b[m\x1b[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,\n'}
+[4.744586] (ur5_scan_path_service) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.744648] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/moveit/move_group_interface/move_group_interface.h:780:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 7 arguments, 4 provided\n'}
+[4.744718] (ur5_scan_path_service) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.744780] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[4.744842] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.744904] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[4.744966] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.745027] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.745088] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[4.745150] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[4.745211] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.745276] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[4.745339] (ur5_scan_path_service) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:1\x1b[m\x1b[K:\n'}
+[4.745401] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:87:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.745466] (ur5_scan_path_service) StderrLine: {'line': b'  122 | CLCPP_INFO(rclcpp::get_logger("rclcpp"), "orientation=: %f %f %f", current.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K.x, current.position.y, current.position.z);\n'}
+[4.745529] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.745596] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.745658] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:107:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.745726] (ur5_scan_path_service) StderrLine: {'line': b'  122 | et_logger("rclcpp"), "orientation=: %f %f %f", current.position.x, current.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K.y, current.position.z);\n'}
+[4.745789] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.745851] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.745913] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:122:127:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.745983] (ur5_scan_path_service) StderrLine: {'line': b'  122 | cpp"), "orientation=: %f %f %f", current.position.x, current.position.y, current.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K.z);\n'}
+[4.746046] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.746108] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.746170] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.746233] (ur5_scan_path_service) StderrLine: {'line': b'  123 | PP_INFO(rclcpp::get_logger("rclcpp"), "orientation=: %f %f %f %f", current.\x1b[01;31m\x1b[Korientation\x1b[m\x1b[K.w, current.orientation.x, current.orientation.y, current.orientation.z);\n'}
+[4.746296] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.746359] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.746442] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:113:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.746534] (ur5_scan_path_service) StderrLine: {'line': b'  123 | ger("rclcpp"), "orientation=: %f %f %f %f", current.orientation.w, current.\x1b[01;31m\x1b[Korientation\x1b[m\x1b[K.x, current.orientation.y, current.orientation.z);\n'}
+[4.746598] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.746661] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.746724] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:136:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.746840] (ur5_scan_path_service) StderrLine: {'line': b'  123 | tion=: %f %f %f %f", current.orientation.w, current.orientation.x, current.\x1b[01;31m\x1b[Korientation\x1b[m\x1b[K.y, current.orientation.z);\n'}
+[4.747143] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.747294] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.747362] (ur5_scan_path_service) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp:123:159:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Korientation\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.747427] (ur5_scan_path_service) StderrLine: {'line': b'  123 |  current.orientation.w, current.orientation.x, current.orientation.y, current.\x1b[01;31m\x1b[Korientation\x1b[m\x1b[K.z);\n'}
+[4.747498] (ur5_scan_path_service) StderrLine: {'line': b'      |                                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.747564] (ur5_scan_path_service) StderrLine: {'line': b'\n'}
+[4.813129] (-) TimerEvent: {}
+[4.913523] (-) TimerEvent: {}
+[5.013858] (-) TimerEvent: {}
+[5.114150] (-) TimerEvent: {}
+[5.214466] (-) TimerEvent: {}
+[5.314782] (-) TimerEvent: {}
+[5.415133] (-) TimerEvent: {}
+[5.515455] (-) TimerEvent: {}
+[5.615819] (-) TimerEvent: {}
+[5.716219] (-) TimerEvent: {}
+[5.816529] (-) TimerEvent: {}
+[5.916838] (-) TimerEvent: {}
+[6.017145] (-) TimerEvent: {}
+[6.117432] (-) TimerEvent: {}
+[6.217739] (-) TimerEvent: {}
+[6.318158] (-) TimerEvent: {}
+[6.418423] (-) TimerEvent: {}
+[6.518727] (-) TimerEvent: {}
+[6.619076] (-) TimerEvent: {}
+[6.719334] (-) TimerEvent: {}
+[6.819599] (-) TimerEvent: {}
+[6.919863] (-) TimerEvent: {}
+[7.020126] (-) TimerEvent: {}
+[7.120395] (-) TimerEvent: {}
+[7.220657] (-) TimerEvent: {}
+[7.320960] (-) TimerEvent: {}
+[7.421226] (-) TimerEvent: {}
+[7.521503] (-) TimerEvent: {}
+[7.621766] (-) TimerEvent: {}
+[7.722069] (-) TimerEvent: {}
+[7.822334] (-) TimerEvent: {}
+[7.864237] (ur5_scan_path_service) StderrLine: {'line': b'make[2]: *** [CMakeFiles/ur5_scan_path_service.dir/build.make:63: CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o] Error 1\n'}
+[7.864540] (ur5_scan_path_service) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ur5_scan_path_service.dir/all] Error 2\n'}
+[7.864722] (ur5_scan_path_service) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.866351] (ur5_scan_path_service) CommandEnded: {'returncode': 2}
+[7.899049] (ur5_scan_path_service) JobEnded: {'identifier': 'ur5_scan_path_service', 'rc': 2}
+[7.909693] (-) EventReactorShutdown: {}
