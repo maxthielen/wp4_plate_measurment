@@ -4,10 +4,10 @@ if __name__ == '__main__':
     print("Init IO Node")
     ur5 = UR5Node()
     print("call set io")
-    ur5.set_io(0,1)
+    ur5.set_digital_output(1,1.0)
 
-    ur5.tigger_move.wait_for_
-    move_res = ur5.set_io()
+    # ur5.tigger_move.wait_for_
+    # move_res = ur5.set_io()
 
     # ur5.trigger_start_position()
     # ur5.trigger_scan()

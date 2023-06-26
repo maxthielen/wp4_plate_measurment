@@ -33,20 +33,20 @@ RUN apt-get install --no-install-recommends -y \
     python3-opencv \
     && rm -rf /var/lib/apt/lists/*
 
-# Install pip requirements
-RUN pip install --upgrade --default-timeout=100 future \
-    transforms3d==0.4.1 \
-    numpy-quaternion==2022.4.3 \
-    numpy \
-    matplotlib \
-    scikit-image \
-    scikit-learn \ 
-    open3d \
-    opencv-python \
-    scipy \ 
-    imutils \
-    python-dotenv \
-    Pillow 
+# # Install pip requirements
+# RUN pip install --upgrade --default-timeout=100 future \
+#     transforms3d==0.4.1 \
+#     numpy-quaternion==2022.4.3 \
+#     numpy \
+#     matplotlib \
+#     scikit-image \
+#     scikit-learn \ 
+#     open3d \
+#     opencv-python \
+#     scipy \ 
+#     imutils \
+#     python-dotenv \
+#     Pillow 
 
 # Add source ROS to .profile
 RUN echo -e 'source /opt/ros/${ROS_DISTRO}/setup.bash' >> /root/.profile

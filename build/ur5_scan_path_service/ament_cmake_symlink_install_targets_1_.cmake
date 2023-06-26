@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/servo_keyboard_input" "TARGETS" "servo_keyboard_input" "DESTINATION" "lib/ur5_scan_path_service")

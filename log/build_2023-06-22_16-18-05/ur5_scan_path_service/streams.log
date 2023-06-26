@@ -1,0 +1,104 @@
+[0.015s] Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service -DCMAKE_INSTALL_PREFIX=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service
+[0.052s] -- The C compiler identification is GNU 9.4.0
+[0.088s] -- The CXX compiler identification is GNU 9.4.0
+[0.091s] -- Check for working C compiler: /usr/bin/cc
+[0.139s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.139s] -- Detecting C compiler ABI info
+[0.183s] -- Detecting C compiler ABI info - done
+[0.191s] -- Detecting C compile features
+[0.191s] -- Detecting C compile features - done
+[0.193s] -- Check for working CXX compiler: /usr/bin/c++
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.250s] -- Detecting CXX compiler ABI info
+[0.305s] -- Detecting CXX compiler ABI info - done
+[0.314s] -- Detecting CXX compile features
+[0.315s] -- Detecting CXX compile features - done
+[0.317s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.334s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.334s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.496s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[0.516s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.521s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.566s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.586s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.643s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.663s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.718s] -- Found control_msgs: 2.5.1 (/opt/ros/foxy/share/control_msgs/cmake)
+[0.999s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.033s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.034s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.035s] -- Looking for pthread.h
+[1.083s] -- Looking for pthread.h - found
+[1.083s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.134s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.134s] -- Looking for pthread_create in pthreads
+[1.176s] -- Looking for pthread_create in pthreads - not found
+[1.177s] -- Looking for pthread_create in pthread
+[1.225s] -- Looking for pthread_create in pthread - found
+[1.226s] -- Found Threads: TRUE  
+[1.336s] -- Found ur_bringup: 2.0.2 (/opt/ros/foxy/share/ur_bringup/cmake)
+[1.337s] -- Found moveit_core: 2.2.3 (/opt/ros/foxy/share/moveit_core/cmake)
+[1.360s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.375s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: filesystem 
+[1.441s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.583s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.936s] -- Found moveit_servo: 2.2.3 (/opt/ros/foxy/share/moveit_servo/cmake)
+[3.130s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system filesystem date_time program_options thread chrono 
+[3.337s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread 
+[3.893s] -- Found moveit_ros_planning_interface: 2.2.3 (/opt/ros/foxy/share/moveit_ros_planning_interface/cmake)
+[3.895s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  
+[3.899s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: date_time filesystem program_options system thread 
+[4.195s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread system filesystem regex date_time program_options 
+[4.487s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system filesystem date_time program_options thread 
+[4.984s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[5.038s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.039s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include>
+[5.039s] -- Configured cppcheck exclude dirs and/or files: 
+[5.040s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.041s] -- Added test 'lint_cmake' to check CMake code style
+[5.042s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[5.045s] -- Added test 'uncrustify' to check C / C++ code style
+[5.045s] -- Configured uncrustify additional arguments: 
+[5.046s] -- Added test 'xmllint' to check XML markup files
+[5.049s] -- Configuring done
+[5.085s] -- Generating done
+[5.087s] -- Build files have been written to: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+[5.096s] Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service -DCMAKE_INSTALL_PREFIX=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service
+[5.101s] Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[5.129s] [35m[1mScanning dependencies of target servo_keyboard_input[0m
+[5.129s] [35m[1mScanning dependencies of target ur5_scan_path_service[0m
+[5.160s] [ 25%] [32mBuilding CXX object CMakeFiles/servo_keyboard_input.dir/src/servo_keyboard_input.cpp.o[0m
+[5.206s] [ 50%] [32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o[0m
+[7.850s] [ 75%] [32m[1mLinking CXX executable servo_keyboard_input[0m
+[8.015s] [ 75%] Built target servo_keyboard_input
+[13.153s] [100%] [32m[1mLinking CXX executable ur5_scan_path_service[0m
+[13.498s] [100%] Built target ur5_scan_path_service
+[13.520s] Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[13.576s] Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+[13.587s] -- Install configuration: ""
+[13.587s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/ur5_scan_path_service
+[13.589s] -- Set runtime path of "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/ur5_scan_path_service" to ""
+[13.589s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/servo_keyboard_input
+[13.591s] -- Set runtime path of "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/servo_keyboard_input" to ""
+[13.591s] -- Up-to-date: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config
+[13.591s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.urdf
+[13.591s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/moveit_servo.yaml
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.srdf
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5_controllers.yaml
+[13.592s] -- Up-to-date: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/scan_service.launch.py
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/sim_scan_service.launch.py
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/package_run_dependencies/ur5_scan_path_service
+[13.592s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/parent_prefix_path/ur5_scan_path_service
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/ament_prefix_path.dsv
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/path.dsv
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.bash
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.sh
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.zsh
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.dsv
+[13.593s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.dsv
+[13.594s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/packages/ur5_scan_path_service
+[13.594s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig.cmake
+[13.594s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig-version.cmake
+[13.594s] -- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.xml
+[13.596s] Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service

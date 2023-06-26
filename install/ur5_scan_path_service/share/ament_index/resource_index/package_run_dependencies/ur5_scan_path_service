@@ -1,1 +1,1 @@
-/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur5_scan_path_service
+rclcpp;std_srvs;moveit_core;moveit_ros_planning_interface;ur_bringup;ur_controllers;ur_description;ur_moveit_config;ament_lint_auto;ament_lint_common

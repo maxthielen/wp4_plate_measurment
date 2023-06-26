@@ -1,0 +1,248 @@
+[0.000000] (-) TimerEvent: {}
+[0.000206] (ur5_scan_path_service) JobQueued: {'identifier': 'ur5_scan_path_service', 'dependencies': OrderedDict()}
+[0.000389] (ur5_scan_path_service) JobStarted: {'identifier': 'ur5_scan_path_service'}
+[0.012800] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'cmake'}
+[0.013329] (ur5_scan_path_service) Command: {'cmd': ['/usr/bin/cmake', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service', '-DCMAKE_INSTALL_PREFIX=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service'], 'cwd': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'visionpc'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1906'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/visionpc'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3665086'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'visionpc'), ('JOURNAL_STREAM', '8:44913'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'visionpc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/visionpc/.local/bin:/home/visionpc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:@/tmp/.ICE-unix/1944,unix/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', 'dd7a4132006946168c438ce7530a719b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8daf050b7e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy')]), 'shell': False}
+[0.052014] (ur5_scan_path_service) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.088126] (ur5_scan_path_service) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.091296] (ur5_scan_path_service) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099874] (-) TimerEvent: {}
+[0.139205] (ur5_scan_path_service) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.139758] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.183346] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.191731] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.191932] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.193842] (ur5_scan_path_service) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.199949] (-) TimerEvent: {}
+[0.249181] (ur5_scan_path_service) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.250372] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300066] (-) TimerEvent: {}
+[0.305127] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.314757] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.315048] (ur5_scan_path_service) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.316923] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.334273] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.334418] (ur5_scan_path_service) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.400175] (-) TimerEvent: {}
+[0.496549] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[0.500245] (-) TimerEvent: {}
+[0.516163] (ur5_scan_path_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.521217] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.566742] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.586670] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.600361] (-) TimerEvent: {}
+[0.643431] (ur5_scan_path_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.663688] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.700469] (-) TimerEvent: {}
+[0.718471] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found control_msgs: 2.5.1 (/opt/ros/foxy/share/control_msgs/cmake)\n'}
+[0.800552] (-) TimerEvent: {}
+[0.900764] (-) TimerEvent: {}
+[0.999687] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.000816] (-) TimerEvent: {}
+[1.033848] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.034810] (ur5_scan_path_service) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.035437] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.083133] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.083341] (ur5_scan_path_service) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.100905] (-) TimerEvent: {}
+[1.134603] (ur5_scan_path_service) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.134780] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.176735] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.176963] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.201033] (-) TimerEvent: {}
+[1.225812] (ur5_scan_path_service) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.226885] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301147] (-) TimerEvent: {}
+[1.336252] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found ur_bringup: 2.0.2 (/opt/ros/foxy/share/ur_bringup/cmake)\n'}
+[1.337462] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found moveit_core: 2.2.3 (/opt/ros/foxy/share/moveit_core/cmake)\n'}
+[1.360296] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.374966] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: filesystem \n'}
+[1.401249] (-) TimerEvent: {}
+[1.440952] (ur5_scan_path_service) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.501367] (-) TimerEvent: {}
+[1.583396] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[1.601441] (-) TimerEvent: {}
+[1.701764] (-) TimerEvent: {}
+[1.802009] (-) TimerEvent: {}
+[1.902248] (-) TimerEvent: {}
+[2.002542] (-) TimerEvent: {}
+[2.102876] (-) TimerEvent: {}
+[2.203166] (-) TimerEvent: {}
+[2.303457] (-) TimerEvent: {}
+[2.403747] (-) TimerEvent: {}
+[2.504040] (-) TimerEvent: {}
+[2.604331] (-) TimerEvent: {}
+[2.704662] (-) TimerEvent: {}
+[2.804922] (-) TimerEvent: {}
+[2.905170] (-) TimerEvent: {}
+[2.936358] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found moveit_servo: 2.2.3 (/opt/ros/foxy/share/moveit_servo/cmake)\n'}
+[3.005270] (-) TimerEvent: {}
+[3.105494] (-) TimerEvent: {}
+[3.130520] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.205605] (-) TimerEvent: {}
+[3.305864] (-) TimerEvent: {}
+[3.337756] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread \n'}
+[3.405960] (-) TimerEvent: {}
+[3.506238] (-) TimerEvent: {}
+[3.606513] (-) TimerEvent: {}
+[3.706781] (-) TimerEvent: {}
+[3.807093] (-) TimerEvent: {}
+[3.893045] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.2.3 (/opt/ros/foxy/share/moveit_ros_planning_interface/cmake)\n'}
+[3.895461] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0")  \n'}
+[3.899610] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: date_time filesystem program_options system thread \n'}
+[3.907183] (-) TimerEvent: {}
+[4.007407] (-) TimerEvent: {}
+[4.107674] (-) TimerEvent: {}
+[4.195542] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: thread system filesystem regex date_time program_options \n'}
+[4.207768] (-) TimerEvent: {}
+[4.307996] (-) TimerEvent: {}
+[4.408268] (-) TimerEvent: {}
+[4.487385] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system filesystem date_time program_options thread \n'}
+[4.508364] (-) TimerEvent: {}
+[4.608556] (-) TimerEvent: {}
+[4.708819] (-) TimerEvent: {}
+[4.809053] (-) TimerEvent: {}
+[4.909298] (-) TimerEvent: {}
+[4.983918] (ur5_scan_path_service) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[5.009385] (-) TimerEvent: {}
+[5.038705] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.039013] (ur5_scan_path_service) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include>\n'}
+[5.039110] (ur5_scan_path_service) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.039981] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[5.041178] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.041975] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[5.045468] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.045530] (ur5_scan_path_service) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.046276] (ur5_scan_path_service) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.049304] (ur5_scan_path_service) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.085778] (ur5_scan_path_service) StdoutLine: {'line': b'-- Generating done\n'}
+[5.087603] (ur5_scan_path_service) StdoutLine: {'line': b'-- Build files have been written to: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service\n'}
+[5.095154] (ur5_scan_path_service) CommandEnded: {'returncode': 0}
+[5.101511] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'build'}
+[5.101558] (ur5_scan_path_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', '--', '-j12', '-l12'], 'cwd': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'visionpc'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1906'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/visionpc'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3665086'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'visionpc'), ('JOURNAL_STREAM', '8:44913'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'visionpc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/visionpc/.local/bin:/home/visionpc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:@/tmp/.ICE-unix/1944,unix/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', 'dd7a4132006946168c438ce7530a719b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8daf050b7e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy')]), 'shell': False}
+[5.109459] (-) TimerEvent: {}
+[5.129006] (ur5_scan_path_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target servo_keyboard_input\x1b[0m\n'}
+[5.129326] (ur5_scan_path_service) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ur5_scan_path_service\x1b[0m\n'}
+[5.160392] (ur5_scan_path_service) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/servo_keyboard_input.dir/src/servo_keyboard_input.cpp.o\x1b[0m\n'}
+[5.205977] (ur5_scan_path_service) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o\x1b[0m\n'}
+[5.209540] (-) TimerEvent: {}
+[5.309806] (-) TimerEvent: {}
+[5.410109] (-) TimerEvent: {}
+[5.510481] (-) TimerEvent: {}
+[5.610877] (-) TimerEvent: {}
+[5.711247] (-) TimerEvent: {}
+[5.811616] (-) TimerEvent: {}
+[5.911991] (-) TimerEvent: {}
+[6.012363] (-) TimerEvent: {}
+[6.112777] (-) TimerEvent: {}
+[6.213129] (-) TimerEvent: {}
+[6.313468] (-) TimerEvent: {}
+[6.413878] (-) TimerEvent: {}
+[6.514282] (-) TimerEvent: {}
+[6.614617] (-) TimerEvent: {}
+[6.714956] (-) TimerEvent: {}
+[6.815339] (-) TimerEvent: {}
+[6.915729] (-) TimerEvent: {}
+[7.016137] (-) TimerEvent: {}
+[7.116545] (-) TimerEvent: {}
+[7.216926] (-) TimerEvent: {}
+[7.317296] (-) TimerEvent: {}
+[7.417709] (-) TimerEvent: {}
+[7.518103] (-) TimerEvent: {}
+[7.618428] (-) TimerEvent: {}
+[7.718844] (-) TimerEvent: {}
+[7.819262] (-) TimerEvent: {}
+[7.849985] (ur5_scan_path_service) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable servo_keyboard_input\x1b[0m\n'}
+[7.919382] (-) TimerEvent: {}
+[8.015705] (ur5_scan_path_service) StdoutLine: {'line': b'[ 75%] Built target servo_keyboard_input\n'}
+[8.019477] (-) TimerEvent: {}
+[8.119751] (-) TimerEvent: {}
+[8.220028] (-) TimerEvent: {}
+[8.320366] (-) TimerEvent: {}
+[8.420704] (-) TimerEvent: {}
+[8.521014] (-) TimerEvent: {}
+[8.621313] (-) TimerEvent: {}
+[8.721632] (-) TimerEvent: {}
+[8.821910] (-) TimerEvent: {}
+[8.922218] (-) TimerEvent: {}
+[9.022523] (-) TimerEvent: {}
+[9.122832] (-) TimerEvent: {}
+[9.223116] (-) TimerEvent: {}
+[9.323428] (-) TimerEvent: {}
+[9.423754] (-) TimerEvent: {}
+[9.524020] (-) TimerEvent: {}
+[9.624332] (-) TimerEvent: {}
+[9.724688] (-) TimerEvent: {}
+[9.824995] (-) TimerEvent: {}
+[9.925307] (-) TimerEvent: {}
+[10.025617] (-) TimerEvent: {}
+[10.125912] (-) TimerEvent: {}
+[10.226296] (-) TimerEvent: {}
+[10.326607] (-) TimerEvent: {}
+[10.426911] (-) TimerEvent: {}
+[10.527190] (-) TimerEvent: {}
+[10.627500] (-) TimerEvent: {}
+[10.727822] (-) TimerEvent: {}
+[10.828126] (-) TimerEvent: {}
+[10.928489] (-) TimerEvent: {}
+[11.028804] (-) TimerEvent: {}
+[11.129132] (-) TimerEvent: {}
+[11.229493] (-) TimerEvent: {}
+[11.329830] (-) TimerEvent: {}
+[11.430174] (-) TimerEvent: {}
+[11.530512] (-) TimerEvent: {}
+[11.630822] (-) TimerEvent: {}
+[11.731144] (-) TimerEvent: {}
+[11.831475] (-) TimerEvent: {}
+[11.931772] (-) TimerEvent: {}
+[12.032113] (-) TimerEvent: {}
+[12.132435] (-) TimerEvent: {}
+[12.232740] (-) TimerEvent: {}
+[12.333049] (-) TimerEvent: {}
+[12.433365] (-) TimerEvent: {}
+[12.533677] (-) TimerEvent: {}
+[12.634025] (-) TimerEvent: {}
+[12.734336] (-) TimerEvent: {}
+[12.834657] (-) TimerEvent: {}
+[12.934971] (-) TimerEvent: {}
+[13.035261] (-) TimerEvent: {}
+[13.135607] (-) TimerEvent: {}
+[13.152861] (ur5_scan_path_service) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ur5_scan_path_service\x1b[0m\n'}
+[13.235728] (-) TimerEvent: {}
+[13.336017] (-) TimerEvent: {}
+[13.436318] (-) TimerEvent: {}
+[13.498143] (ur5_scan_path_service) StdoutLine: {'line': b'[100%] Built target ur5_scan_path_service\n'}
+[13.518962] (ur5_scan_path_service) CommandEnded: {'returncode': 0}
+[13.536595] (-) TimerEvent: {}
+[13.561458] (ur5_scan_path_service) JobProgress: {'identifier': 'ur5_scan_path_service', 'progress': 'install'}
+[13.575792] (ur5_scan_path_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'], 'cwd': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'visionpc'), ('LC_TIME', 'nl_NL.UTF-8'), ('SSH_AGENT_PID', '1906'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/visionpc'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator'), ('TERM_PROGRAM_VERSION', '1.78.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1735'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3665086'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'visionpc'), ('JOURNAL_STREAM', '8:44913'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'visionpc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/visionpc/.local/bin:/home/visionpc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:@/tmp/.ICE-unix/1944,unix/visionpc-ZBOX-QCM7T3000-EN072080S-EN072070S-EN052060C:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', 'dd7a4132006946168c438ce7530a719b'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8daf050b7e.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service:/opt/ros/foxy')]), 'shell': False}
+[13.587016] (ur5_scan_path_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.587376] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/ur5_scan_path_service\n'}
+[13.588792] (ur5_scan_path_service) StdoutLine: {'line': b'-- Set runtime path of "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/ur5_scan_path_service" to ""\n'}
+[13.589071] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/servo_keyboard_input\n'}
+[13.591026] (ur5_scan_path_service) StdoutLine: {'line': b'-- Set runtime path of "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/ur5_scan_path_service/servo_keyboard_input" to ""\n'}
+[13.591283] (ur5_scan_path_service) StdoutLine: {'line': b'-- Up-to-date: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config\n'}
+[13.591490] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.urdf\n'}
+[13.591713] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/moveit_servo.yaml\n'}
+[13.591897] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5.srdf\n'}
+[13.592098] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/config/ur5_controllers.yaml\n'}
+[13.592277] (ur5_scan_path_service) StdoutLine: {'line': b'-- Up-to-date: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch\n'}
+[13.592451] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/scan_service.launch.py\n'}
+[13.592624] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/launch/sim_scan_service.launch.py\n'}
+[13.592789] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/package_run_dependencies/ur5_scan_path_service\n'}
+[13.592897] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/parent_prefix_path/ur5_scan_path_service\n'}
+[13.593032] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/ament_prefix_path.dsv\n'}
+[13.593217] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/environment/path.dsv\n'}
+[13.593362] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.bash\n'}
+[13.593500] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.sh\n'}
+[13.593606] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.zsh\n'}
+[13.593746] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/local_setup.dsv\n'}
+[13.593884] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.dsv\n'}
+[13.594034] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ament_index/resource_index/packages/ur5_scan_path_service\n'}
+[13.594175] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig.cmake\n'}
+[13.594282] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/cmake/ur5_scan_path_serviceConfig-version.cmake\n'}
+[13.594425] (ur5_scan_path_service) StdoutLine: {'line': b'-- Installing: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.xml\n'}
+[13.595845] (ur5_scan_path_service) CommandEnded: {'returncode': 0}
+[13.637838] (-) TimerEvent: {}
+[13.639772] (ur5_scan_path_service) JobEnded: {'identifier': 'ur5_scan_path_service', 'rc': 0}
+[13.640401] (-) EventReactorShutdown: {}

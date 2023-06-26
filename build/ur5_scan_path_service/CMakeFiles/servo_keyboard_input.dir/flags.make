@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++17
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include -isystem /opt/ros/foxy/include 
 

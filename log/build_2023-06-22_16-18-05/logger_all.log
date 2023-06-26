@@ -1,0 +1,227 @@
+[0.246s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.246s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa188fac910>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa188fac910>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fa188face80>)
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.277s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extensions ['python_setup_py']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master) by extension 'python_setup_py'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'ros'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['cmake', 'python']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'cmake'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'python'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extensions ['python_setup_py']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(flip-master/app) by extension 'python_setup_py'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'ros'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['cmake', 'python']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'cmake'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'python'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extensions ['python_setup_py']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master) by extension 'python_setup_py'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'ros'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['cmake', 'python']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/interfaces) by extension 'python_setup_py'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['ignore', 'ignore_ament_install']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'ignore'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'ignore_ament_install'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['colcon_pkg']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'colcon_pkg'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['colcon_meta']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'colcon_meta'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['ros']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'ros'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['cmake', 'python']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'cmake'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'python'
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extensions ['python_setup_py']
+[0.290s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/library) by extension 'python_setup_py'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['ros']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'ros'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['cmake', 'python']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'cmake'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'python'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extensions ['python_setup_py']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/flip_master/modules) by extension 'python_setup_py'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extension 'ignore_ament_install'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extensions ['colcon_pkg']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extension 'colcon_pkg'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extensions ['colcon_meta']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extension 'colcon_meta'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur5_scan_path_service) by extension 'ros'
+[0.294s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur5_scan_path_service' with type 'ros.ament_cmake' and name 'ur5_scan_path_service'
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.294s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.314s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install
+[0.315s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/foxy
+[0.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_target' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.382s] Level 5:colcon.colcon_core.verb:set package 'ur5_scan_path_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.382s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_scan_path_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service', 'merge_install': False, 'path': '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service', 'symlink_install': False, 'test_result_base': None}
+[0.383s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.388s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.388s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service' with build type 'ament_cmake'
+[0.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service'
+[0.392s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.392s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.392s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service -DCMAKE_INSTALL_PREFIX=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service
+[5.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service -DCMAKE_INSTALL_PREFIX=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service
+[5.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[13.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[13.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+[13.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_scan_path_service)
+[13.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+[13.990s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service' for CMake module files
+[13.990s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service' for CMake config files
+[13.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_scan_path_service', 'cmake_prefix_path')
+[13.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.ps1'
+[13.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.dsv'
+[13.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.sh'
+[13.994s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib'
+[13.994s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/bin'
+[13.994s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/pkgconfig/ur5_scan_path_service.pc'
+[13.994s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/python3.8/site-packages'
+[13.994s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/bin'
+[13.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.ps1'
+[13.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.dsv'
+[13.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.sh'
+[13.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.bash'
+[13.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.zsh'
+[13.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/colcon-core/packages/ur5_scan_path_service)
+[14.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_scan_path_service)
+[14.019s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service' for CMake module files
+[14.019s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service' for CMake config files
+[14.020s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_scan_path_service', 'cmake_prefix_path')
+[14.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.ps1'
+[14.022s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.dsv'
+[14.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/hook/cmake_prefix_path.sh'
+[14.023s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib'
+[14.023s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/bin'
+[14.023s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/pkgconfig/ur5_scan_path_service.pc'
+[14.023s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/lib/python3.8/site-packages'
+[14.023s] Level 1:colcon.colcon_core.environment:checking '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/bin'
+[14.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.ps1'
+[14.026s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.dsv'
+[14.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.sh'
+[14.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.bash'
+[14.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/ur5_scan_path_service/package.zsh'
+[14.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service/share/colcon-core/packages/ur5_scan_path_service)
+[14.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[14.028s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.032s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.032s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.032s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.045s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/local_setup.ps1'
+[14.048s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/_local_setup_util_ps1.py'
+[14.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/setup.ps1'
+[14.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/local_setup.sh'
+[14.051s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/_local_setup_util_sh.py'
+[14.051s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/setup.sh'
+[14.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/local_setup.bash'
+[14.053s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/setup.bash'
+[14.055s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/local_setup.zsh'
+[14.055s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/setup.zsh'

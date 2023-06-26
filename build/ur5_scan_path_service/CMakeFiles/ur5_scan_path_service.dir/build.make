@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service
+CMAKE_SOURCE_DIR = /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+CMAKE_BINARY_DIR = /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ur5_scan_path_service.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/ur5_scan_path_service.dir/progress.make
 include CMakeFiles/ur5_scan_path_service.dir/flags.make
 
 CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o: CMakeFiles/ur5_scan_path_service.dir/flags.make
-CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o: /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o -c /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp
+CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o: /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.o -c /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp
 
 CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp > CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp > CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.i
 
 CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp -o CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/src/ur5_scan_path_service.cpp -o CMakeFiles/ur5_scan_path_service.dir/src/ur5_scan_path_service.cpp.s
 
 # Object files for target ur5_scan_path_service
 ur5_scan_path_service_OBJECTS = \
@@ -351,7 +351,7 @@ ur5_scan_path_service: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bridge.so.1
 ur5_scan_path_service: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 ur5_scan_path_service: /usr/lib/x86_64-linux-gnu/libcrypto.so
 ur5_scan_path_service: CMakeFiles/ur5_scan_path_service.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ur5_scan_path_service"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ur5_scan_path_service"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ur5_scan_path_service.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -364,6 +364,6 @@ CMakeFiles/ur5_scan_path_service.dir/clean:
 .PHONY : CMakeFiles/ur5_scan_path_service.dir/clean
 
 CMakeFiles/ur5_scan_path_service.dir/depend:
-	cd /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles/ur5_scan_path_service.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles/ur5_scan_path_service.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ur5_scan_path_service.dir/depend
 

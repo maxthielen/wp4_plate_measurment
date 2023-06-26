@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service
+CMAKE_SOURCE_DIR = /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
+CMAKE_BINARY_DIR = /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/ros_ws/src/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service")
+  set(install_space "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/install/ur5_scan_path_service")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/install_manifest.txt")
+set(install_manifest "/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -55,6 +55,3 @@ endforeach()
 message(STATUS "Execute custom uninstall script")
 
 # begin of custom uninstall code
-
-# uninstall files installed using the symlink install functions
-include("/home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

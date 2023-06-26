@@ -1,0 +1,6 @@
+[0.017s] Invoking command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12
+[0.023s] CMake Error: The current CMakeCache.txt directory /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeCache.txt is different than the directory /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.031s] CMake Error: The source directory "/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service" does not exist.
+[0.031s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.031s] make: *** [Makefile:310: cmake_check_build_system] Error 1
+[0.033s] Invoked command in '/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service -- -j12 -l12

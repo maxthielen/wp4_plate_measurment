@@ -1,0 +1,4 @@
+CMake Error: The current CMakeCache.txt directory /home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service/CMakeCache.txt is different than the directory /home/ros_ws/src/wp4_plate_measurement_demonstrator/build/ur5_scan_path_service where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source directory "/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** [Makefile:310: cmake_check_build_system] Error 1

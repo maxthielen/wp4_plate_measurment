@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++17
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_DATE_TIME_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/ros_ws/src/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3 -isystem /usr/include/bullet -isystem /usr/include/libqhull_r -isystem /opt/ros/foxy/include/control_toolbox 
+CXX_INCLUDES = -I/home/visionpc/Documents/VISIR/wp4_plate_measurement_demonstrator/src/ur5_scan_path_service/include -isystem /opt/ros/foxy/include -isystem /usr/include/eigen3 -isystem /usr/include/bullet -isystem /usr/include/libqhull_r -isystem /opt/ros/foxy/include/control_toolbox 
 
