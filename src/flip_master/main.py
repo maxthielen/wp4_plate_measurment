@@ -1,10 +1,18 @@
+import asyncio
 from modules.ur5_nodes import UR5Node
 
-if __name__ == '__main__':
+async def main():
     print("Init IO Node")
     ur5 = UR5Node()
     print("call set io")
-    ur5.set_digital_output(1,1.0)
+    ur5.set_digital_output(4,1.0)
+    await ur5.trigger_scan()
+
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main())
+
+    
 
     # ur5.tigger_move.wait_for_
     # move_res = ur5.set_io()
