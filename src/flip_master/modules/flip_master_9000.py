@@ -1,4 +1,4 @@
-from ..interfaces.controller import controller, TransducerStates, WorkInProgress
+from interfaces.controller import controller, TransducerStates, WorkInProgress
 
 
 class FlipMaster9000(controller):

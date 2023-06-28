@@ -1,4 +1,4 @@
-from ..interfaces.scanner import scanner
+from interfaces.scanner import scanner
 from .plate_point_cloud import PlatePointCloud
 
 

@@ -21,7 +21,7 @@ import cv2 as cv
 import open3d as o3d
 
 
-def img_to_pcd(img_filename, compress=True, verbose=False):
+def img_to_pcd(img_filename, compress=True, verbose=True):
     img_path = os.path.realpath('.') + os.getenv("img_path") + img_filename
     pil_img = Image.open(img_path)
     if pil_img is None:

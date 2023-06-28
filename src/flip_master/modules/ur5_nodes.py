@@ -16,6 +16,9 @@ class UR5Node():
         rclpy.init()
         self.node = rclpy.create_node('flip_master_node')
 
+        # wait a bit for ur servies to become available
+        sleep(2)
+
         # I/O subscription w/ callback and set_io client 
         self.get_io_sub = self.node.create_subscription(IOStates, '/io_and_status_controller/io_states', self.io_callback, 10)
 
@@ -51,15 +54,23 @@ class UR5Node():
         self.executor_thread = threading.Thread(target=self.executor.spin, daemon=True)
         self.executor_thread.start()
 
+        self.init_scan()
+
         print("UR5 Node ready")
 
         self.digital_inputs = [0] * 18
 
     def __del__(self):
+        # disengage dashboard
+        if self.dashboard_disengage_cli.wait_for_service(timeout_sec=10) == False: 
+            raise Exception("dashboard_client/stop service timeout")
+        disengage_resp = self.dashboard_disengage_cli.call(Trigger.Request())
+        print(disengage_resp)
+
         self.node.destroy_node()
         rclpy.shutdown()
 
-    def trigger_scan(self):
+    def init_scan(self):
         # load
         if self.dashboard_load_program_cli.wait_for_service(timeout_sec=5.0) == False: 
             raise Exception("dashboard_client/load_program service timeout")
@@ -76,17 +87,12 @@ class UR5Node():
 
         sleep(1)
 
+    def trigger_scan(self):
         # run
         if self.dashboard_run_cli.wait_for_service(timeout_sec=5.0) == False: 
             raise Exception("dashboard_client/close_popup service timeout")
         run_resp = self.dashboard_run_cli.call(Trigger.Request())
         print(run_resp)
-
-        # # disengage
-        # if self.dashboard_disengage_cli.wait_for_service(timeout_sec=10) == False: 
-        #     raise Exception("dashboard_client/stop service timeout")
-        # disengage_resp = await self.dashboard_disengage_cli.call(Trigger.Request())
-        # print(disengage_resp)
 
     def set_digital_output(self, pin, state):
         if self.set_io_cli.wait_for_service(timeout_sec=5.0) == False:

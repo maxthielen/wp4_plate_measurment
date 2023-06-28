@@ -8,14 +8,14 @@ from datetime import datetime
 
 from skimage import measure
 
-from ..library.pcd_to_2d import to_2d
-from ..library.convert_file_type import img_to_pcd
-from ..library import preprocessing as prep
+from library.pcd_to_2d import to_2d
+from library.convert_file_type import img_to_pcd
+from library import preprocessing as prep
 from skimage.measure import regionprops
 
 from time import sleep
 
-def preprocess_pcd(pcd: o3d.geometry.PointCloud, thickness: float):
+def preprocess_pcd(pcd: o3d.geometry.PointCloud, thickness: float, top, bottom):
     """
     Reads in a csv point cloud.
     Then processes it to a 2d depth image.
@@ -29,35 +29,19 @@ def preprocess_pcd(pcd: o3d.geometry.PointCloud, thickness: float):
     
     # filtered pcd which is used for the preprocessing
     pcd_sel = pcd.select_by_index(np.where(xyz[:, 2] >= 0)[0])
-    # o3d.visualization.draw_geometries([pcd_sel], window_name='pcd_sel', mesh_show_wireframe=True)
+    o3d.visualization.draw_geometries([pcd_sel], window_name='pcd_sel', mesh_show_wireframe=True)
 
+    print(f'thickness = {thickness}')
     # Filter out all values too far away from the steel plate z-axis
-    pcd_filtered = prep.filter_out_steel_plate(pcd_sel, thickness)
-    # o3d.visualization.draw_geometries([pcd_filtered], window_name='pcd_filtered')
+    pcd_filtered = prep.filter_out_steel_plate(pcd_sel, thickness, top, bottom)
+    o3d.visualization.draw_geometries([pcd_filtered], window_name='pcd_filtered')
 
     # Remove the outliers from the filtered pcd
     pcd_inliers = prep.remove_outliers(pcd_filtered)
-    # o3d.visualization.draw_geometries([pcd_inliers], window_name='pcd_inliers', mesh_show_wireframe=True)
+    o3d.visualization.draw_geometries([pcd_inliers], window_name='pcd_inliers', mesh_show_wireframe=True)
 
     # Get the axis aligned bounding box
     aabb = prep.get_bounding_box(pcd_inliers)
-
-    vis = o3d.visualization.Visualizer()
-    vis.create_window()
-
-    # geometry is the point cloud used in your animaiton
-    geometry = o3d.geometry.PointCloud()
-    vis.add_geometry(geometry)
-
-    pcd_list = [pcd, pcd_sel, pcd_filtered, pcd_inliers]
-    for _pcd in pcd_list:
-        # now modify the points of your geometry
-        # you can use whatever method suits you best, this is just an example
-        geometry.points = _pcd.points
-        vis.update_geometry(geometry)
-        vis.poll_events()
-        vis.update_renderer()
-        sleep(10)
 
     # Crop the picture with the bbox
     pcd = pcd_inliers.crop(aabb)
@@ -122,7 +106,7 @@ class PointCloud:
 
         # apply preprocessing
         _start_time = datetime.now()
-        pcd = preprocess_pcd(pcd, thickness)
+        pcd = preprocess_pcd(pcd, thickness, plate_planes['top'], plate_planes['bottom'])
         o3d.visualization.draw_geometries([pcd])
         
 
@@ -187,10 +171,10 @@ class PointCloud:
         # this part might not work so great in all situations
         conveyor = peaks[0]
         bottom = peaks[1]
-        top = peaks[-1]
+        top = peaks[2]
 
         print(f"peaks: {peaks}")
-        print(f"top: {peaks[-1]}")
+        print(f"top: {peaks[2]}")
         print(f"bottom: {peaks[1]}")
         print(f"'conveyor': {peaks[0]}")
 

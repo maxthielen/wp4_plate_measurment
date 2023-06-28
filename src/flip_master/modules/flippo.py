@@ -2,7 +2,7 @@ import asyncio
 from functools import partial
 import numpy as np
 
-from ..interfaces.flipper import flipper
+from interfaces.flipper import flipper
 
 
 class Flippo(flipper):

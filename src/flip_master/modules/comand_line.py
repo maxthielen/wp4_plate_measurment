@@ -1,5 +1,5 @@
-from ..interfaces.publisher import publisher
-from ..interfaces.receiver import reciever
+from interfaces.publisher import publisher
+from interfaces.receiver import reciever
 
 class CommandLinePublisher(publisher):
     def __init__(self) -> None:
