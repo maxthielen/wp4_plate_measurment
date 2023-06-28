@@ -1,7 +1,8 @@
 #! /bin/bash
-echo "Starting development container for the Plate measurement demonstrator"
+echo "Starting development container for the plate measurement demonstrator"
+
 xhost +local:docker
-docker run -id `# pseudo-interactive (keep running) and detached (background)` \
+docker run -i `# pseudo-interactive (keep running) and detached (background)` \
     --network host `# share network with host` \
     --rm `# remove container after stopping` \
     -e DISPLAY=${DISPLAY} `# set environment variable DISPLAY to same value as on host` \
