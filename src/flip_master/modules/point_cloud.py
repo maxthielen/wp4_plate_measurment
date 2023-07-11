@@ -1,16 +1,18 @@
 import os
 import numpy as np
 import open3d as o3d
-from matplotlib import pyplot as plt
+import matplotlib
+import matplotlib.pyplot as plt
 from scipy import signal
 import cv2 as cv
 from datetime import datetime
+import statistics as st
 
 from skimage import measure
 
 from library.pcd_to_2d import to_2d
 from library.convert_file_type import img_to_pcd
-from library import preprocessing as prep
+import library.preprocessing as prep
 from skimage.measure import regionprops
 
 from time import sleep
@@ -30,7 +32,7 @@ def preprocess_pcd(pcd: o3d.geometry.PointCloud, thickness: float, top, bottom):
     # filtered pcd which is used for the preprocessing
     pcd_sel = pcd.select_by_index(np.where(xyz[:, 2] >= 0)[0])
     o3d.visualization.draw_geometries([pcd_sel], window_name='pcd_sel', mesh_show_wireframe=True)
-
+    # return pcd_sel
     print(f'thickness = {thickness}')
     # Filter out all values too far away from the steel plate z-axis
     pcd_filtered = prep.filter_out_steel_plate(pcd_sel, thickness, top, bottom)
@@ -54,6 +56,8 @@ class PointCloud:
         self.verbose = verbose
         self.MM_PER_DIST = os.getenv("mm_per_dist")
 
+        matplotlib.use('GTK3Agg')
+
         if file_type == ".pcd" or file_type == "-bin.pcd":
             self.file_path = os.path.realpath('') + os.getenv("pcd_path") + file_name + file_type
         elif file_type == ".png":
@@ -67,7 +71,212 @@ class PointCloud:
             self.file_path = img_to_pcd(file_name + file_type)
         else:
             raise Exception(f"Error: unrecognized file type given: {file_type}")
+        
+    def isolate_plate(self, show):
+        # get pcd
+        pcd = o3d.io.read_point_cloud(self.file_path)
+        if show: self.show(pcd, "from_png")
 
+        # crop to one side of the flipper
+        pcd = self.crop_start_side(pcd)
+        if show: self.show(pcd, "crop_start_side")
+
+        # crop everything below flipper plate
+        xyz = np.asarray(pcd.points)
+        planes = self.segment_planes(xyz)
+        print(planes['bottom'])
+        pcd = pcd.select_by_index(np.where(xyz[:, 2] >= 520)[0])
+        if show: self.show(pcd, "crop everything below bottom plane")
+
+        # remove outliers
+        down_pcd = pcd.voxel_down_sample(voxel_size=0.1)
+        cl, ind = down_pcd.remove_statistical_outlier(nb_neighbors=50, std_ratio=1.0)
+        pcd = down_pcd.select_by_index(ind)
+        # xyz = np.asarray(pcd.points)
+        # pcd = pcd.select_by_index(np.where(xyz[:, 2] <= 600)[0])
+        if show: self.show(pcd, "remove outliers")
+
+        xyz = np.asarray(pcd.points)
+
+        x = xyz[:,0]
+        y = xyz[:,1]
+        z = xyz[:,2]
+
+        print(f"x[0]: {x[0]}")
+        print(f"x[len(x)-1]: {x[len(x)-1]}")
+
+        print(f"y[0]: {y[0]}")
+        print(f"y[len(y)-1]: {y[len(y)-1]}")
+
+        print(f"z[0]: {z[0]}")
+        print(f"z[len(z)-1]: {z[len(z)-1]}")
+
+        slope = (y[len(y)-1] - y[0])/(z[len(z)-1]-z[0])
+
+        print(f"slope: {slope}")
+
+        crop_pcd = self.crop_slope(pcd)
+        if show: self.show(crop_pcd,"slope")
+        xyz = np.asarray(crop_pcd.points)
+        x = xyz[:,0]
+        y = xyz[:,1]
+        z = xyz[:,2]
+
+        slope1 = (y[len(y)-1] - y[0])/(z[len(z)-1]-z[0])
+        slope2 = ((z[len(z)-1]-z[0]/y[len(y)-1] - y[0]))
+
+        print(f"slope: {slope1}")
+        print(f"slope: {slope2}")
+
+        import math as m
+        xyz = np.asarray(pcd.points)
+        
+        xyz = xyz * self.Rx(m.radians(90.4))
+        pcd.points = o3d.utility.Vector3dVector(xyz)
+
+        x = xyz[:,0]
+        y = xyz[:,1]
+        z = xyz[:,2]
+
+        slope1 = (y[len(y)-1] - y[0])/(z[len(z)-1]-z[0])
+        print(f"slope: {slope1}")
+
+        xyz = np.asarray(pcd.points)
+        # planes = self.segment_planes(xyz)
+
+       
+
+        x = xyz[:,0]
+        y = xyz[:,1]
+        z = xyz[:,2]
+
+        print(f"x[0]: {x[0]}")
+        print(f"x[len(x)-1]: {x[len(x)-1]}")
+
+        print(f"y[0]: {y[0]}")
+        print(f"y[len(y)-1]: {y[len(y)-1]}")
+
+        print(f"z[0]: {z[0]}")
+        print(f"z[len(z)-1]: {z[len(z)-1]}")
+
+        if show: self.show(pcd, "rotated?")
+
+
+
+        # xyz = np.asarray(pcd.points)
+        # planes = self.segment_planes(xyz)
+
+        # # Get the axis aligned bounding box
+        # aabb = prep.get_bounding_box(pcd)
+
+        # # Crop the picture with the bbox
+        # pcd = pcd.crop(aabb)
+        # self.show(pcd, "bounding box")
+        
+        # xyz = np.asarray(pcd.points)
+        # print(xyz)
+
+        # z = xyz[:, 2]
+        # min_max_dist = max(z) - min(z)
+        # bin_size_mm = 0.5
+        # bin_size = bin_size_mm / float(self.MM_PER_DIST)
+
+        # print(f"thickness: {min_max_dist}")
+        # print(f"thickness: {((max(z) * bin_size_mm) - (min(z) * bin_size_mm))}")
+
+        # print(xyz[:,2])
+
+        # st_dev = st.stdev(z)
+        # z[z < min_max_dist - st_dev * 1.1] = 500
+        # z[z > min_max_dist + st_dev * 1.5] = 500
+
+        # # We recreate the pcd with the filtered values.
+        # # This creates a pcd only with the steel plate points at the mode height
+        # # This also leaves some points which are at the height of the steel plate,
+        # # but are not part of the plate. These we will remove later with outlier removal.
+        # pcd.points = o3d.utility.Vector3dVector(xyz)
+        # # points = np.asarray(pcd.points)
+        # # pcd = pcd.select_by_index(np.where(points[:, 2] > min_max_dist - 2)[0])
+        # self.show(pcd)
+
+
+        pcd = pcd.select_by_index(np.where(xyz[:, 1] >= 533)[0])
+        self.show(pcd, 'just plate?')
+
+        # remove outliers
+        down_pcd = pcd.voxel_down_sample(voxel_size=0.1)
+        cl, ind = down_pcd.remove_statistical_outlier(nb_neighbors=50, std_ratio=1.0)
+        pcd = down_pcd.select_by_index(ind)
+        # xyz = np.asarray(pcd.points)
+        # pcd = pcd.select_by_index(np.where(xyz[:, 2] <= 600)[0])
+        if show: self.show(pcd, "remove outliers")
+
+    def Rx(self, theta):
+        import math as m
+        return np.matrix([[ 1 , 0            , 0             ],
+                          [ 0 , m.cos(theta) , -m.sin(theta) ],
+                          [ 0 , m.sin(theta) , m.cos(theta)  ]])
+
+    def Ry(self, theta):
+        import math as m
+        return np.matrix([[ m.cos(theta) , 0 , m.sin(theta) ],
+                          [ 0            , 1 , 0            ],
+                          [ -m.sin(theta), 0 , m.cos(theta) ]])
+
+    def Rz(self, theta):
+        import math as m
+        return np.matrix([[ m.cos(theta) , -m.sin(theta), 0 ],
+                          [ m.sin(theta) , m.cos(theta) , 0 ],
+                          [ 0            , 0            , 1 ]])
+
+    def segment_planes(self, xyz):
+        # get z values
+        z = xyz[:, 2]
+
+        # size of the bins in the histogram function, defines the 'resolution' of the peak finding
+        bin_size_mm = 0.5
+        # peak dist bins is the minimum distance in bins between two recognized peaks
+        peak_dist_bins = 5
+
+        min_max_dist = max(z) - min(z)
+        bin_size = bin_size_mm / float(self.MM_PER_DIST)
+        bin_amt = round(min_max_dist / bin_size)
+
+        z_hist = np.histogram(z, bins=bin_amt)
+
+        # prominence set manually, might need tweaking/alternative
+        peaks = signal.find_peaks(z_hist[0], distance=peak_dist_bins, prominence=6000)
+        # get the actual peak indices
+        peaks = peaks[0]
+        print(f"peaks: {peaks}")
+        
+        return {
+            # 'top' : peaks[3] * bin_size + min(z),
+            'bottom' : peaks[0] * bin_size + min(z)
+        }
+    
+    def crop_z(self, pcd, bottom):
+        xyz = np.asarray(pcd.points)
+        return pcd.select_by_index(np.where(xyz[:, 2] >= bottom)[0])
+        xyz = np.asarray(pcd.points)
+        return pcd.select_by_index(np.where(xyz[:, 2] <= top)[0])
+    
+
+    def crop_start_side(self, pcd):
+        xyz = np.asarray(pcd.points)
+        return pcd.select_by_index(np.where(xyz[:, 1] >= 350)[0])
+    
+    def crop_deliver_side(self, pcd):
+        xyz = np.asarray(pcd.points)
+        
+        return pcd.select_by_index(np.where(xyz[:, 1] <= 260)[0])
+    
+    def crop_slope(self, pcd):
+        xyz = np.asarray(pcd.points)
+        pcd = pcd.select_by_index(np.where(xyz[:, 0] >= 214)[0])
+        xyz = np.asarray(pcd.points)
+        return pcd.select_by_index(np.where(xyz[:, 0] <= 215)[0])
+        
     def extract_features(self):
         """
             Generate features from a PointCloud
@@ -91,8 +300,14 @@ class PointCloud:
 
         # set the bottom of the plate to z=0
         _start_time = datetime.now()
-        xyz[:, 2] = xyz[:, 2] - plate_planes['bottom']
-        pcd.points = o3d.utility.Vector3dVector(xyz)
+
+        # xyz[:, 2] = xyz[:, 2] - plate_planes['bottom']
+        # pcd.points = o3d.utility.Vector3dVector(xyz)
+        pcd = pcd.select_by_index(np.where(xyz[:, 2] >= plate_planes['bottom'])[0])
+        xyz = np.asarray(pcd.points)
+        pcd = pcd.select_by_index(np.where(xyz[:, 2] <= plate_planes['top'])[0])
+        xyz = np.asarray(pcd.points)
+
         _end_time = datetime.now()
         if self.verbose:
             print(f"['extract_features: plate bottom recognition'] = {_end_time} - {_start_time}")
@@ -107,8 +322,38 @@ class PointCloud:
         # apply preprocessing
         _start_time = datetime.now()
         pcd = preprocess_pcd(pcd, thickness, plate_planes['top'], plate_planes['bottom'])
-        o3d.visualization.draw_geometries([pcd])
         
+        xyz = np.asarray(pcd.points)
+
+        # get z values
+        z = xyz[:, 2]
+
+        # size of the bins in the histogram function, defines the 'resolution' of the peak finding
+        bin_size_mm = 0.5
+        # peak dist bins is the minimum distance in bins between two recognized peaks
+        peak_dist_bins = 5
+
+        print(f"z: {z}")
+        min_max_dist = max(z) - min(z)
+        bin_size = bin_size_mm / float(self.MM_PER_DIST)
+        bin_amt = round(min_max_dist / bin_size)
+
+        z_hist = np.histogram(z, bins=bin_amt)
+
+        print(f"z_hist: {z_hist[0]}")
+
+        # prominence set manually, might need tweaking/alternative
+        peaks = signal.find_peaks(z_hist[0], distance=peak_dist_bins, prominence=6000)
+        # get the actual peak indices
+        peaks = peaks[0]
+
+        # With this code we can visualize the histogram and the peaks
+        # plt.plot(z_hist[0], bin_amt)
+        # plt.
+        plt.plot(peaks, z_hist[0][peaks], "x")
+        plt.show()
+
+        o3d.visualization.draw_geometries([pcd])
 
         plate_top_pcd = o3d.geometry.PointCloud()
         xyz = np.asarray(pcd.points)
@@ -156,6 +401,7 @@ class PointCloud:
         bin_amt = round(min_max_dist / bin_size)
 
         z_hist = np.histogram(z, bins=bin_amt)
+
         print(f"z_hist: {z_hist[0]}")
 
         # prominence set manually, might need tweaking/alternative
@@ -164,24 +410,26 @@ class PointCloud:
         peaks = peaks[0]
 
         # With this code we can visualize the histogram and the peaks
-        # plt.stairs(z_hist[0], z_hist[1])
-        # plt.plot(peaks, z_hist[0][peaks], "x")
-        # plt.show()
+        # plt.plot(z_hist[0], z_hist[1])
+        # plt.plot(z_hist[0], bin_amt)
+        plt.plot(peaks, z_hist[0][peaks], "x")
+        plt.show()
 
         # this part might not work so great in all situations
         conveyor = peaks[0]
         bottom = peaks[1]
-        top = peaks[2]
+        top = peaks[-1]
 
         print(f"peaks: {peaks}")
         print(f"top: {peaks[2]}")
         print(f"bottom: {peaks[1]}")
-        print(f"'conveyor': {peaks[0]}")
+        print(f"conveyor: {peaks[0]}")
 
         # We add the min(z) back to the peaks, so that the peaks from the histogram align with the peaks in the pcd
         return {
+            'conveyor': conveyor * bin_size + min(z),
             'bottom': bottom * bin_size + min(z),
-            'top': top * bin_size + min(z)
+            'top': top * bin_size + min(z),
         }
 
     def get_position(self, pcd):
@@ -337,3 +585,6 @@ class PointCloud:
         pcd = o3d.io.read_point_cloud(self.file_path)
         # todo:: check for unable to open file warning
         o3d.visualization.draw_geometries([pcd])
+
+    def show(self, pcd, win_name):
+        o3d.visualization.draw_geometries([pcd], window_name=win_name)

@@ -17,8 +17,8 @@ def filter_out_steel_plate(pcd: o3d.geometry.PointCloud, thickness: float, top, 
     filtered_xyz = np.asarray(pcd.points)
     filtered_z = filtered_xyz[:, 2]
     st_dev = st.stdev(filtered_z)
-    filtered_z[filtered_z < thickness + st_dev * 1] = 0
-    filtered_z[filtered_z > thickness - st_dev * 3] = 0
+    filtered_z[filtered_z < thickness - st_dev * 1.1] = 0
+    filtered_z[filtered_z > thickness + st_dev * 1.5] = 0
 
     # We recreate the pcd with the filtered values.
     # This creates a pcd only with the steel plate points at the mode height
